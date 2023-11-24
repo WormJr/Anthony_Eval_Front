@@ -1,0 +1,15 @@
+@use '../_maps' as map;
+@use '../class' as c;
+
+button {
+    background: map-get(map.$background, secondary-color)
+}
+
+header {
+    background-image: url(../../images/background.jpg) no-repeat;
+}
+
+form {
+    text-align: center;
+}
+

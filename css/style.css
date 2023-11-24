@@ -1,0 +1,24 @@
+.flex_Elements {
+  display: flex;
+}
+
+.space-between__Elements {
+  justify-content: space-between;
+}
+
+.space-around__Elements {
+  justify-content: space-around;
+}
+
+.center__Elements {
+  justify-content: center;
+}
+
+.vertical__Elements {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background: #4e984f;
+}/*# sourceMappingURL=style.css.map */
