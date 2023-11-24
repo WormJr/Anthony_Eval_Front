@@ -16,6 +16,7 @@
 }
 
  #header_dropdown {
+  z-index: 2;
   position: fixed !important;
   right: 5px !important;
   top: 0 !important;
@@ -83,6 +84,8 @@ header {
   z-index: -1;
 }
 
+
+
 body h2,p{
 color: black !important;
 }
@@ -110,6 +113,7 @@ color: black !important;
 }
 
 #filter {
+
   display: flex;
   justify-content: space-between;
 }
@@ -124,6 +128,21 @@ color: black !important;
 #cars_dropdown button {
   background: #fff;
  color: black;
+}
+
+#footer_div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#details_contact {
+  height: 100%;
+  margin-left: 30px;
+}
+
+#details_contact p  {
+  margin: 0;
 }
 
 
