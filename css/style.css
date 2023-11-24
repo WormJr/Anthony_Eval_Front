@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
 
+/* class display */ 
+
 .flex_Elements {
   display: flex;
 }
@@ -9,17 +11,20 @@
   flex-direction: column;
 }
 
+/* RESET */ 
+
 * {
   margin: 0;
   list-style: none;
   box-sizing: border-box;
 }
 
- #header_dropdown {
-  z-index: 2;
-  position: fixed !important;
-  right: 5px !important;
-  top: 0 !important;
+/* Selecteurs Globaux */ 
+
+header {
+  align-items: center;
+  height: auto;
+  width: 100%;
 }
 
 a {
@@ -66,11 +71,21 @@ input {
   margin: 0 20px !important;
 }
 
-header {
-  align-items: center;
-  height: auto;
-  width: 100%;
+body h2,
+p {
+  color: black !important;
 }
+
+/* ////////////////////// */ 
+
+#header_dropdown {
+  z-index: 2;
+  position: fixed !important;
+  right: 5px !important;
+  top: 0 !important;
+}
+
+
 
 .form-container {
   display: flex;
@@ -86,17 +101,11 @@ header {
 
 
 
-body h2,p{
-color: black !important;
-}
-
 #cars {
   margin-top: 180px !important;
 }
 
-
 .card {
-
   height: 100% !important;
   width: 100% !important;
   border: none !important;
@@ -113,7 +122,6 @@ color: black !important;
 }
 
 #filter {
-
   display: flex;
   justify-content: space-between;
 }
@@ -127,7 +135,11 @@ color: black !important;
 
 #cars_dropdown button {
   background: #fff;
- color: black;
+  color: black;
+}
+
+#cars button {
+  border-radius: 5px !important;
 }
 
 #footer_div {
@@ -141,23 +153,22 @@ color: black !important;
   margin-left: 30px;
 }
 
-#details_contact p  {
+#details_contact p {
   margin: 0;
 }
 
 
+/* Responsive */
 
 @media only screen and (max-width: 1024px) {
-
   .form-container {
     display: flex;
     flex-direction: column;
     margin: 0;
   }
-  
+
   form {
     display: block;
     text-align: center;
   }
-
 }

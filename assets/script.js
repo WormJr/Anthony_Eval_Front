@@ -1,4 +1,4 @@
-// Tableau pour le slider du header 
+// Tableau pour le slider du header
 var images = [
   "assets/slideshow/background1.jpg",
   "assets/slideshow/background2.jpg",
@@ -28,7 +28,7 @@ function changeImage() {
 // Lancement de la fonction changeImage() toutes les 4 secondes
 setInterval(changeImage, 4000);
 
-// Création de mon tableau pour les modeles de voiture 
+// Création de mon tableau pour les modeles de voiture
 const carsLocation = [
   {
     id: 10,
@@ -72,12 +72,10 @@ const carsLocation = [
   },
 ];
 
-
 const carsContainer = document.getElementById("cars");
 
-// fonction qui me permet d'ajouter toutes les infos récuperer de mon tableau plus haut 
+// fonction qui me permet d'ajouter toutes les infos récuperer de mon tableau plus haut
 carsLocation.map((car) => {
-
   const card = document.createElement("div");
   card.className = "card";
 

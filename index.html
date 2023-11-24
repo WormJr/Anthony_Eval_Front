@@ -4,24 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site de location de voiture" />
+  <meta property="og:title" content="Voiture de location">
+  <meta property="og:type" content="shop" />
+  <meta property="og:url" content="http://EnVoitureSimone.com/index.html">
+  <meta name="twitter:card" content="summary_large_image">
   <title>En voiture Simone</title>
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/d80d271032.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div  id="header_dropdown">
+  <div id="header_dropdown">
     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       <i class="fa-solid fa-bars" style="color: #fff;"></i>
     </button>
     <ul class="dropdown-menu">
-      <li><button class="dropdown-item" type="button"><a href="#">Louer une voiture</a></button></li>
-      <li><button class="dropdown-item" type="button"><a href="#">Louer un utilitaire</a></button></li>
-      <li><button class="dropdown-item" type="button"><a href="#">Réserver un chauffeur</a></button></li>
-      <li><button class="dropdown-item" type="button"><a href="#">Découvrez nos agences</a></button></li>
-      <li><button class="dropdown-item" type="button"><a href="#">Mon compte</a></button></li>
-      <li><button class="dropdown-item" type="button"><a href="#">Contact</a></button></li>
+      <li><button class="dropdown-item" type="button"> Louer une voiture</button></li>
+      <li><button class="dropdown-item" type="button"> Louer un utilitaire</button></li>
+      <li><button class="dropdown-item" type="button"> Réserver un chauffeur</button></li>
+      <li><button class="dropdown-item" type="button"> Découvrez nos agences</button></li>
+      <li><button class="dropdown-item" type="button"> Mon compte</button></li>
+      <li><button class="dropdown-item" type="button"> Contact</button></li>
     </ul>
   </div>
   <header class="vertical__Elements">
@@ -30,15 +36,17 @@
     <p class="text-light">Location de voiture 24H/24</p>
 
     <div class="form-container">
-      <form id="searchForm" action="">
+      <form id="searchForm">
         <select name="adress" id="adress" required>
-          <option value="" >Adresse de départ</option>
+          <option value="">Adresse de départ</option>
           <option value="">Adresse 1</option>
           <option value="">Adresse 2</option>
           <option value="">Adresse 3</option>
         </select>
-        <input type="text" placeholder="Début de location" name="start" required onfocus="this.type='date'" onblur="this.type='text'">
-        <input type="text" placeholder="Fin de location" name="end" required onfocus="this.type='date'" onblur="this.type='text'">
+        <input type="text" placeholder="Début de location" name="start" required onfocus="this.type='date'"
+          onblur="this.type='text'">
+        <input type="text" placeholder="Fin de location" name="end" required onfocus="this.type='date'"
+          onblur="this.type='text'">
       </form>
       <button type="submit">Valider ma recherche</button>
     </div>
@@ -47,41 +55,40 @@
   <body>
     <div id="cars">
       <div id="filter">
-      <h2> 4 résultats</h2>
-      <div id="cars_dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Prix croissant
-        </button>
-        <ul class="dropdown-menu">
-          <li><button class="dropdown-item" type="button">Prix décroissant</button></li>
-        </ul>
+        <h2> 4 résultats</h2>
+        <div id="cars_dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Prix croissant
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">Prix décroissant</button></li>
+          </ul>
+        </div>
       </div>
-    </div>
-     
-  </div>
-
-  <footer>
-    <div id="footer_div">
-      <img src="assets/img/agence.jpg" alt="image de l'agence">
-      <div id="details_contact">
-      <p>Notre agence de <span>Paris</span></p>
-      <p>300 boulevard de vaugirard, 75015, Paris</p>
-      <p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
-      <p>01 49 78 21 33</p>
-      <p>contact@vtc.com</p>
-    </div>
-
-      
 
     </div>
-  </footer>
+
+    <footer>
+      <div id="footer_div">
+        <img src="assets/img/agence.jpg" alt="image de l'agence">
+        <div id="details_contact">
+          <p>Notre agence de <span>Paris</span></p>
+          <p>300 boulevard de vaugirard, 75015, Paris</p>
+          <p>Ouvert 7j/7 de 09h à 13h et de 14h à 20h</p>
+          <p>01 49 78 21 33</p>
+          <p>contact@vtc.com</p>
+        </div>
+
+
+
+      </div>
+    </footer>
+    <script src="assets/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
   </body>
-
-
-
-  <script src="assets/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
 
 
 </html>
