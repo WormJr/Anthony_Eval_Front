@@ -1,27 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>En voiture Simone</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/d80d271032.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <h1>Bienvenue à bord</h1>
-        <p>Location de voiture 24H/24</p>
-        <form action="">
-          <select name="adresse" id="adress">
-            <option value="">Adresse de départ</option>
-            <option value="">Adresse 1</option>
-            <option value="">Adresse 2</option>
-            <option value="">Adresse 3</option>
-          </select>
-          <input type="text" placeholder="Début de location" onfocus="this.type='date'" onblur="this.type='text'">
-          <input type="text" placeholder="Fin de location" onfocus="this.type='date'" onblur="this.type='text'">
-          <button>Valider ma recherche</button>
-        </form>
-    </header>
-    
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fa-solid fa-bars" style="color: #fff;"></i>
+    </button>
+    <ul class="dropdown-menu">
+      <li><button class="dropdown-item" type="button"><a href="#">Louer une voiture</a></button></li>
+      <li><button class="dropdown-item" type="button"><a href="#">Louer un utilitaire</a></button></li>
+      <li><button class="dropdown-item" type="button"><a href="#">Réserver un chauffeur</a></button></li>
+      <li><button class="dropdown-item" type="button"><a href="#">Découvrez nos agences</a></button></li>
+      <li><button class="dropdown-item" type="button"><a href="#">Mon compte</a></button></li>
+      <li><button class="dropdown-item" type="button"><a href="#">Contact</a></button></li>
+    </ul>
+  </div>
+  <header class="vertical__Elements">
+    <img id="banner__img" src="assets/slideshow/background1.jpg" alt="banniere voiture">
+    <h1>Bienvenue à bord</h1>
+    <p>Location de voiture 24H/24</p>
+
+    <div class="form-container">
+      <form action="">
+        <select name="adresse" id="adress">
+          <option value="">Adresse de départ</option>
+          <option value="">Adresse 1</option>
+          <option value="">Adresse 2</option>
+          <option value="">Adresse 3</option>
+        </select>
+        <input type="text" placeholder="Début de location" onfocus="this.type='date'" onblur="this.type='text'">
+        <input type="text" placeholder="Fin de location" onfocus="this.type='date'" onblur="this.type='text'">
+      </form>
+      <button>Valider ma recherche</button>
+    </div>
+  </header>
+
+  <script src="assets/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
+
 </html>
