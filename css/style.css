@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 
-.dropdown {
+ #header_dropdown {
   position: fixed !important;
   right: 5px !important;
   top: 0 !important;
@@ -26,7 +26,7 @@ a {
   color: grey !important ;
 }
 
-h1,
+header h1,
 p {
   color: #fff !important ;
 }
@@ -82,3 +82,48 @@ header {
   position: absolute;
   z-index: -1;
 }
+
+body h2,p{
+color: black !important;
+}
+
+#cars {
+  margin-top: 180px !important;
+}
+
+
+.card {
+
+  height: 100% !important;
+  width: 100% !important;
+  border: none !important;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  border: none !important;
+  max-width: 200px;
+  max-height: 150px;
+}
+
+#filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card button {
+  margin: auto;
+  color: #fff;
+  border: none;
+  background: rgba(78, 151, 79, 1);
+}
+
+#cars_dropdown button {
+  background: #fff;
+ color: black;
+}
+
+
